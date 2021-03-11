@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form get javascript</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        h1 {
+            font-weight: 100;
+        }
+        body {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 300px;
+            background: black;
+            color: white;
+            font-family: sans-serif;
+        }
+    </style>
+    <script>
+        var urlSearchParam = new URLSearchParams(window.location.search)
+        document.write("<h1>" + "Name: "+urlSearchParam.get('name') + "<br>" + "Password: " + urlSearchParam.get('password') + "<br>" + "Favourite colour: " + urlSearchParam.get('color') + "<div></div>" + "</h1>")
+        document.querySelector('div').style.background=urlSearchParam.get('color')
+    </script>
+</body>
+</html>

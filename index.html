@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form get javascript</title>
+</head>
+<body>
+  <style>
+
+
+    body {
+      background: black;
+      color: white;
+      font-size: 2em;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    input[type="color"] {
+      width: 50px;
+      height: 30px;
+      border: none;
+      background-color: #333;
+    }
+    input[type="submit"] {
+      width: 100px;
+      height: 30px;
+      font-size: 0.7em;
+      border: white solid 2px;
+      cursor: pointer;
+    }
+    input[type="text"], input[type="password"] {
+      width: 150px;
+      font-size: 0.7em;
+      height: 20px;
+    }
+  </style>
+  <br><br><br><br><br><br><br>
+  <form action="page.html" method="GET">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required>
+    <br><br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required>
+    <br><br>
+    <label for="color">Favourite colour</label>
+    <input type="color" name="color" id="color" required>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
